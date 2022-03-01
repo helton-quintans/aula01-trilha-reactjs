@@ -3,6 +3,15 @@ section.repository-list {
 
   h1 {
     margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #7cd1a6;
+
+  }
+
+  strong {
+    margin-top: 3px;
   }
 
   ul {
@@ -13,18 +22,63 @@ section.repository-list {
     & + li {
       margin-top: 20px;
     }
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+    border-style:solid;
+    border-radius: 8px;
+  }
+
+  li:hover{
+    background:rgb(24, 3, 24) radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+    color: white;
   }
 
   p {
     font-size: 14px;
-    color: #444;
+    color: rgb(143, 142, 141);
     margin-top: 8px;
   }
 
   a {
     display: inline-block;
+    padding: 3px;
     margin-top: 16px;
+    margin-bottom: 5px;
     text-decoration: none;
     color: #7cd1a6;
+    border:solid 1px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #999;
   }
+  a:hover {
+    background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+    color: white;
+  }
+
 }
+
+// button {
+//   color: #1D9AF2;
+//   background-color: #292D3E;
+//   border: 1px solid #1D9AF2;
+//   border-radius: 4px;
+//   padding: 15px 18px 30px 15px
+//   cursor: pointer;
+//   height:32px;
+//   font-size:14px;
+//   box-shadow: 0 0 4px #999;
+//   background-position: center;
+//   transition: background 0.8s;
+//   }
+//   button:hover {
+//   background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+//   color: white;
+//   }
+//   button:active{
+//   background-color:#292d3e;
+//   background-size: 100%;
+//   transition: background 0s;
+//   }
